@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlnsDc="http://purl.org/dc/elements/1.1/"
+   xmlnsCc="http://creativecommons.org/ns#"
+   xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlnsSvg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnsXlink="http://www.w3.org/1999/xlink"
+   xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40mm"
+   height="40mm"
+   viewBox="0 0 40 40"
+   version="1.1"
+   id="svg8"
+   inkscapeVersion="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodiDocname="logo.svg"
+   inkscapeExport-filename="/home/tangram/Proyectos/CV/ClientApp/src/resources/images/text16.png"
+   inkscapeExport-xdpi="102.81336"
+   inkscapeExport-ydpi="102.81336">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath24">
+      <use
+         x="0"
+         y="0"
+         xlinkHref="#g20"
+         id="use26"
+         width="100%"
+         height="100%"
+         transform="translate(54.653918,-192.95877)" />
+    </clipPath>
+  </defs>
+  <sodipodiNamedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscapePageopacity="0.0"
+     inkscapePageshadow="2"
+     inkscapeZoom="1.8101934"
+     inkscapeCx="-19.936549"
+     inkscapeCy="83.740779"
+     inkscapeDocument-units="mm"
+     inkscapeCurrent-layer="layer1"
+     showgrid="false"
+     inkscapeWindow-width="1360"
+     inkscapeWindow-height="710"
+     inkscapeWindow-x="0"
+     inkscapeWindow-y="0"
+     inkscapeWindow-maximized="1"
+     inkscapeSnap-global="false" />
+  <metadata
+     id="metadata5">
+    <rdfRDF>
+      <ccWork
+         rdfAbout="">
+        <dcFormat>image/svg+xml</dcFormat>
+        <dcType
+           rdfResource="http://purl.org/dc/dcmitype/StillImage" />
+        <dcTitle></dcTitle>
+      </ccWork>
+    </rdfRDF>
+  </metadata>
+  <g
+     inkscapeLabel="Capa 1"
+     inkscapeGroupmode="layer"
+     id="layer1"
+     transform="translate(0,-257)"
+     style="displayInline">
+    <g
+       id="g20"
+       inkscapeLabel="Clip"
+       transform="translate(-54.653918,192.95877)"
+       style="fill:#483745">
+      <g
+         aria-label="c"
+         style="font-styleNormal;font-weightNormal;font-size:10.58333302px;line-height:1.25;font-familySans-serif;letter-spacing:0px;word-spacing:0px;fill:#483745;fill-opacity:1;strokeNone;stroke-width:0.26458332"
+         id="text12" />
+    </g>
+    <g
+       id="g105" />
+    <text
+       id="text16"
+       y="290.94614"
+       x="18.017496"
+       style="font-styleNormal;font-weightNormal;font-size:10.58333302px;line-height:1.25;font-familySans-serif;letter-spacing:0px;word-spacing:0px;fill:#7137c8;fill-opacity:1;strokeNone;stroke-width:0.26458332;"
+       xmlSpace="preserve"><tspan
+         style="font-size:35.27777863px;fill:#7137c8;stroke-width:0.26458332;"
+         y="290.94614"
+         x="18.017496"
+         id="tspan14"
+         sodipodiRole="line">v</tspan></text>
+  </g>
+  <g
+     inkscapeGroupmode="layer"
+     id="layer2"
+     inkscapeLabel="Capa 2">
+    <path
+       sodipodiNodetypes="ssccssscccss"
+       inkscapeConnector-curvature="0"
+       id="path61"
+       style="displayInline;font-styleNormal;font-variantNormal;font-weightNormal;font-stretchNormal;font-size:35.27777863px;line-height:1.25;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';letter-spacing:0px;word-spacing:0px;fill:#442178;fill-opacity:1;strokeNone;stroke-width:0.26458332"
+       d="m 56.666187,82.435513 c 0,5.750278 4.586112,10.16 10.512778,10.16 3.986389,0 7.126112,-1.728611 9.454445,-6.138334 h -2.963333 c -2.010834,2.681112 -3.880556,3.739445 -6.596945,3.739445 -4.339167,0 -7.761111,-3.421944 -7.761111,-7.690556 0,-4.339166 3.404099,-7.725833 7.707988,-7.725833 2.8575,0 5.221111,1.375833 6.702778,3.915833 L 81.394472,90.425651 77.08079,78.696068 c -1.552222,-3.880555 -5.739047,-6.314722 -10.078213,-6.314722 -5.785556,0 -10.33639,4.445 -10.33639,10.054167 z"
+       transform="translate(-54.653918,-64.041229)" />
+  </g>
+</svg>
