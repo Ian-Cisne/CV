@@ -29,7 +29,7 @@ export class Images extends Component {
     );
   }
   async populateImagesData() {
-    const response = await fetch('images');
+    const response = await fetch('api/images');
     const data = await response.json();
     this.setState({ images: data, loading: false });
   }

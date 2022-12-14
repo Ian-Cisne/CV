@@ -1,18 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.IO;
+using System.Net;
+using System.Web;
 using System.Collections.Generic;
-
+using System.Text.Json;
 namespace CV.Controllers;
 
 [ApiController]
-[Route("image")]
+[Route("api/[controller]")]
 public class ImageController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
     private readonly ILogger<ImageController> _logger;
 
     public ImageController(ILogger<ImageController> logger)
@@ -21,14 +18,19 @@ public class ImageController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<Image> Get()
+    public JsonResult Get()
     {
-        IEnumerable<Image> images = new List<Image>();
-        foreach (var file in Directory.EnumerateFiles(@"/home/tangram/Proyectos/DBimages/109D7100/"))
-        {
-            Image image = new Image(File.GetCreationTime(file), file);
-            images.Add(image);
+        List<Image> images = new List<Image>();
+        try{
+            foreach (var file in Directory.EnumerateFiles(@"/home/geomatra/Proyectos/DBimages/109D7100/"))
+            {
+                Image image = new Image(System.IO.File.GetCreationTime(file), file);
+                images.Add(image);
+            }
         }
-        return images.ToArray();
+        catch(DirectoryNotFoundException e){
+            return new JsonResult(string.Concat("{\"error\": \"", e.Message ,"\"}"));
+        }
+        return new JsonResult(images);
     }
 }
