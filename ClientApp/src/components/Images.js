@@ -5,7 +5,7 @@ export class Images extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { images: [{}], loading: true };
+    this.state = { images: [], loading: true };
   }
 
   static renderImagesTable(images) {
