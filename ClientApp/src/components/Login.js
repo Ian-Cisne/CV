@@ -17,7 +17,7 @@ export class Login extends Component {
   renderErrorMessage(name) {
     if(name === this.state.errorMessage.name) {
       return (
-        <div className="error">{this.state.errorMessage.message}</div>
+        <div className="loginError">{this.state.errorMessage.message}</div>
       )
     }
     else {
@@ -31,15 +31,19 @@ export class Login extends Component {
   render () {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label for="username">
-          Nombre de usuario:
-        </label>
-        <input type="text" id="username" minLength="5" maxLength="30" required/>
+        <div className="loginField">
+          <label for="username">
+            Nombre de usuario:
+          </label>
+          <input type="text" id="username" minLength="5" maxLength="30" required/>
+        </div>
         {this.renderErrorMessage("username")}
-        <label for="username">
-          Contraseña:
-        </label>
-        <input type="password" id="password" minLength="8" maxLength="50" required/>
+        <div className="loginField">
+          <label for="username">
+            Contraseña:
+          </label>
+          <input type="password" id="password" minLength="8" maxLength="50" required/>
+        </div>
         {this.renderErrorMessage("password")}
 
         <input type="submit" value="Login"/>
