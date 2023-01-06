@@ -1,4 +1,4 @@
-namespace CV;
+namespace CV.Models;
 
 public class WeatherForecast
 {

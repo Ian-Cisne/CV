@@ -1,12 +1,20 @@
-namespace CV;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CV.Models;
 
 public class Image
 {
-    public Image(DateTime creationDate, string title){
-        this.CreationDate = creationDate;
-        this.Title = title;
-    } 
-    public DateTime CreationDate { get; }
+    [Key]
+    [Column(TypeName = "INT")]
+    public int id { get; set; }
 
-    public string? Title { get;  }
+    [Column(TypeName = "INT")]
+    public int size { get; set; }
+
+    [Column(TypeName = "NVARCHAR")]
+    public string? title { get; set; }
+
+    [Column(TypeName = "DATETIME")]
+    DateTime date_time { get; set; }
 }

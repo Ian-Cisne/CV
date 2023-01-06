@@ -2,36 +2,41 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace CV
+namespace CV.Models;
+[Table("users")]
+public class User
 {
-    [Table("users")]
-    public class User
-    {
-        [Key]
-        [Column(TypeName = "INT")]
-        public int user_id {get; set;}
+    [Key]
+    [Column(TypeName = "INT")]
+    public int id {get; set;}
 
-        [Column(TypeName = "NVARCHAR")]
-        public string user_name {get; set;}
+    [Required]
+    [Column(TypeName = "NVARCHAR")]
+    public string name {get; set;}
 
-        [Column(TypeName = "NVARCHAR")]
-        public string user_guid {get; set;}
-        
-        [Column(TypeName = "NVARCHAR")]
-        public string user_login_name {get; set;}
+    [Required]
+    [Column(TypeName = "NVARCHAR")]
+    public string guid {get; set;}
+    
+    [Required]
+    [Column(TypeName = "NVARCHAR")]
+    public string login_name {get; set;}
 
-        [Column(TypeName = "NVARCHAR")]
-        public string user_email {get; set;}
-        
-        [Column(TypeName = "BINARY")]
-        public byte[] user_password {get; }
+    [Required]
+    [Column(TypeName = "NVARCHAR")]
+    public string email {get; set;}
+    
+    [Required]
+    [Column(TypeName = "BINARY")]
+    public byte[] password {get; }
 
-        [Column(TypeName = "NVARCHAR")]
-        public string user_first_name {get; set;}
+    [Required]
+    [Column(TypeName = "NVARCHAR")]
+    public string first_name {get; set;}
 
-        [Column(TypeName = "NVARCHAR")]
-        public string user_last_name {get; set;}
-
-    }
+    [Required]
+    [Column(TypeName = "NVARCHAR")]
+    public string last_name {get; set;}
 
 }
+
