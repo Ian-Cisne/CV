@@ -13,9 +13,9 @@ namespace CV.Persistance
 
         public CvRepository(CvContext cvContext) => _cvContext = cvContext;
 
-        public IEnumerable<User> GetUsers() => _cvContext.Users.Include(c => c.Image).ToList();
+        public IEnumerable<User> GetUsers() => _cvContext.Users.ToList();
 
-        public User GetUser(int id) => _cvContext.Users.Include(c => c.Image).FirstOrDefault(x => x.Id == id);
+        public User GetUser(int id) => _cvContext.Users.FirstOrDefault(x => x.id == id);
 
         public bool AddUser(User user)
         {

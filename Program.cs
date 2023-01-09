@@ -1,4 +1,5 @@
 
+
 namespace CV
 {
     public class Program
@@ -27,9 +28,10 @@ namespace CV
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller}/{action=Index}/{id?}");
+                pattern: "{controller}/{action=Index}/{id?}",
+                defaults: new { controller = "home", action = "Index" });
 
-            app.MapFallbackToFile("index.html");;
+            //app.MapFallbackToFile("index.html");;
 
             app.Run();
 

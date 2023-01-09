@@ -16,5 +16,5 @@ public class Image
     public string? title { get; set; }
 
     [Column(TypeName = "DATETIME")]
-    DateTime date_time { get; set; }
+    public DateTime date_time { get; set; }
 }

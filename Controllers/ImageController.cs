@@ -4,6 +4,9 @@ using System.Net;
 using System.Web;
 using System.Collections.Generic;
 using System.Text.Json;
+using CV.Models;
+
+
 namespace CV.Controllers;
 
 [ApiController]
@@ -24,7 +27,12 @@ public class ImageController : ControllerBase
         try{
             foreach (var file in Directory.EnumerateFiles(@"/home/geomatra/Proyectos/DBimages/109D7100/"))
             {
-                Image image = new Image(System.IO.File.GetCreationTime(file), file);
+                Image image = new Image() {
+                        id = 2,
+                        size = 3,
+                        date_time = System.IO.File.GetCreationTime(file),
+                        title = file
+                    };
                 images.Add(image);
             }
         }
